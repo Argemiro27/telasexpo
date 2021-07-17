@@ -11,6 +11,7 @@ export const ButtonStyle = styled.TouchableOpacity`
 `
 
 export const ButtonStyleText = styled.Text`
+    font-family: NovaFlat_400Regular;
     color: ${colors.grayLight};
     font-size: 18px;
     text-align: center;

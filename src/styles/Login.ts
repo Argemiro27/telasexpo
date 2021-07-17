@@ -7,6 +7,7 @@ export const Container = styled.View`
 `
 
 export const Title = styled.Text`
+    font-family: NovaFlat_400Regular;
     font-size: 36px;
     color: #828282;
     font-weight: 500;
@@ -17,6 +18,7 @@ export const Title = styled.Text`
 
 export const Form = styled.KeyboardAvoidingView`
 
+
 `
 
 export const FormRow = styled.View`
@@ -25,6 +27,7 @@ export const FormRow = styled.View`
 `
 
 export const TextInput = styled.TextInput`
+    font-family: NovaFlat_400Regular;
     color: #333333;
     background-color: #C4C4C4;
     width: 286px;

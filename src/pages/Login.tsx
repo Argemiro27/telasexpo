@@ -1,10 +1,15 @@
 import React from "react"
+import { useFonts, NovaFlat_400Regular } from '@expo-google-fonts/nova-flat';
 import { Form, Container, FormRow, TextInput, Title } from "../styles/Login"
 import {Button,ButtonText, Header} from "../components"
 import {useNavigation} from '@react-navigation/core'
 
 
 export default function Login(){
+    let [fontsLoaded] = useFonts({
+        NovaFlat_400Regular,
+    });
+
     const navigation = useNavigation()
     function handleCadastrar(){
         navigation.navigate("Cadastrar")
@@ -15,7 +20,7 @@ export default function Login(){
                 image2={require("../../assets/cabecalho1.png")}
                 image={require("../../assets/logo1.png")}
             />
-            <Form>
+            <Form>  
                 <Title>LOGIN</Title>
                 <FormRow>
                     <TextInput placeholder="Email"></TextInput>
