@@ -15,22 +15,26 @@ export default function Login(){
         navigation.navigate("Cadastrar")
     }
     return(
-        <Container>
-            <Header
-                image2={require("../../assets/cabecalho1.png")}
-                image={require("../../assets/logo1.png")}
-            />
-            <Form>  
-                <Title>LOGIN</Title>
-                <FormRow>
-                    <TextInput placeholder="Email"></TextInput>
-                </FormRow>
-                <FormRow>
+        <>
+            {fontsLoaded &&(
+            <Container>
+                <Header
+                    image2={require("../../assets/cabecalho1.png")}
+                    image={require("../../assets/logo1.png")}
+                />
+                <Form>  
+                    <Title>LOGIN</Title>
+                    <FormRow>
+                        <TextInput placeholder="Email"></TextInput>
+                    </FormRow>
+                    <FormRow>
                     <TextInput placeholder="Senha"></TextInput>
-                </FormRow>
-                <Button title="Entrar" onPress={handleCadastrar} />
-                <ButtonText title="CADASTRAR-SE" onPress={handleCadastrar} />
-            </Form>
-        </Container>
+                    </FormRow>
+                    <Button title="Entrar" onPress={handleCadastrar} />
+                    <ButtonText title="CADASTRAR-SE" onPress={handleCadastrar} />
+                </Form>
+            </Container>
+            )}
+        </>
     );
 }
